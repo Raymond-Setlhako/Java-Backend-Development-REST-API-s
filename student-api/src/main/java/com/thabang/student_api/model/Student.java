@@ -5,8 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
+
 
 
 //Represents a table in the database
@@ -18,11 +17,9 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)//Auto generate
     private Long id;
 
-    @NotBlank(message = "Name cannot be blank")
+
     private String name;
-    @Min(value = 18, message = "Age must be at least 18")
     private int age;
-    @NotBlank(message = "Course cannot be blank")
     private String course;
     private boolean active;
 

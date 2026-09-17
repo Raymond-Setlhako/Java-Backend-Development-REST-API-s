@@ -3,6 +3,8 @@ package com.thabang.student_api.dto;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
+
+//This class handles input and validation
 public class CreateStudentRequest {
 
     //adding validation
